@@ -8,7 +8,7 @@ const Work = () => {
   return (
     <>
       
-      <div id="id" className="work">
+      <div id="work" className="work">
         <h2 className="work__title">My recent work</h2>
         <div className="work__items">
           <div className="works work--one">
