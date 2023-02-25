@@ -1,0 +1,52 @@
+.home {
+  height: 400px;
+  background-image: url("/src/images/Illustration\ 2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  background-size: 700px;
+  background-position-x:400px;
+  background-position-y:-100px;
+
+
+}
+
+.home__container{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.home__title{
+  font-size:60px;
+  color: white;
+}
+
+.home__btns{
+ 
+  display: flex;
+  gap: 40px;
+
+}
+
+.btn{
+  border-radius: 15px;
+  height: 30px;
+  font-size: 17px;
+  padding: 5px;
+}
+
+
+@media (min-width:280px) and (max-width:599px) {
+
+  .home__container{
+    text-align: center;
+  
+  }
+  .home__btns{
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
