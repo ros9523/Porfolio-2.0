@@ -2,8 +2,8 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import emailjs from "emailjs-com";
 import "./style/Contact.css";
-import {FaPhoneAlt,FaEnvelope} from "react-icons/fa";
-import { IconContext } from "react-icons";
+import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import bg from "../images/Illustration3.svg";
 
 const Contact = () => {
   const { register, reset, handleSubmit } = useForm();
@@ -30,20 +30,29 @@ const Contact = () => {
   };
 
   return (
-    <>
-   
-    <div id="contact" className="contact-me">
-      <div className="contact">
-        <div className="contact__container">
-          <div className="contact__title--text">
+    <div id="contact" className="contact">
+      <img className="contact__bg" src={bg} />
+      <div className="contact__container">
+        <div className="contact__info">
+          <div className="contact__container_texts">
             <h3 className="contact__title">Get in contact</h3>
             <p className="contact__text">
               I am very approachable and would love to speak with you
             </p>
           </div>
           <div className="contact__information">
-            <span className="contacts contact__phone"><IconContext.Provider value={{ className:"Icon"}}><FaPhoneAlt/></IconContext.Provider> 87963502</span>
-            <span className="contacts contact__email"><IconContext.Provider value={{ className:"Icon"}}><FaEnvelope/></IconContext.Provider> rofidiaz33@gmail.com</span>
+            <div className="contact__information--container">
+            <span className="contacts contacts__phone">
+              <FaPhoneAlt className="phone" size={15} />
+            </span>
+            <span className="contact__text">87963502</span>
+            </div>
+            <div className="contact__information--container">
+            <span className="contacts contacts__email">
+              <FaEnvelope className="envelope" size={15} />
+            </span>
+            <span className="contact__text">rofidiaz33@gmail.com</span>
+          </div>
           </div>
         </div>
 
@@ -54,16 +63,14 @@ const Contact = () => {
             onSubmit={handleSubmit(submit)}
             className="contact__forms"
           >
-           
             <input
               {...register("first_name")}
-              type="first_name"
+              type="text"
               placeholder="name"
               id="first_name"
               className="input"
               required
             />
-        
 
             <input
               {...register("email")}
@@ -72,8 +79,9 @@ const Contact = () => {
               id="email"
               className="input"
               required
+              color="white"
             />
-            
+
             <input
               {...register("subject")}
               type="text"
@@ -96,7 +104,6 @@ const Contact = () => {
         </div>
       </div>
     </div>
-    </>
   );
 };
 

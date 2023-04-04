@@ -1,21 +1,26 @@
+
 .home {
-  height: 400px;
-  background-image: url("/src/images/Illustration\ 2.svg");
+  height: 650px;
+  background-image: url("/src/images/Illustration 2.svg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 900px;
   background-position: right;
-  background-size: 700px;
-  background-position-x:400px;
-  background-position-y:-100px;
-
-
+  /* background-position-x:600px;*/
+  background-position-y: 25%; 
+  background-color: #0F103F;
 }
 
+
 .home__container{
+
+  
+  height: 400px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  align-items: center;
+ align-items: center;
+ justify-content: center;
+ gap: 30px;
+ 
 }
 
 .home__title{
@@ -24,22 +29,33 @@
 }
 
 .home__btns{
- 
   display: flex;
-  gap: 40px;
-
+  gap: 20px;
+  margin-right:15px;
 }
 
-.btn{
-  border-radius: 15px;
-  height: 30px;
-  font-size: 17px;
-  padding: 5px;
+.home__btn{
+  height: 40px;
+  width: 160px;
+  border-radius: 20px;
+  border: 1px solid ;
+  padding: 10px;
+  color:white;
+  background: linear-gradient(to right, #C961DE, #2954A3);
+  cursor: pointer;
 }
 
 
 @media (min-width:280px) and (max-width:599px) {
 
+  .home{
+    width:100%;
+    display: flex;
+    background-color: green;
+    background-size: 0px;
+    justify-content: center;
+
+  }
   .home__container{
     text-align: center;
   

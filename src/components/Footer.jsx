@@ -1,58 +1,88 @@
 import React from "react";
 import "./style/Footer.css";
+import AnchorLink from "react-anchor-link-smooth-scroll";
+
 import {
   FaYoutube,
   FaInstagram,
-  FaLinkedin,
+  FaLinkedinIn,
   FaTwitter,
   FaFacebook,
-  FaHome, 
-  FaUserAlt, 
-  FaBriefcase, 
-  FaPhoneAlt
+  FaFacebookF,
+  FaHome,
+  FaUserAlt,
+  FaBriefcase,
+  FaPhoneAlt,
 } from "react-icons/fa";
-import { IconContext } from "react-icons";
+
+import {} from "react-icons/";
 
 const Footer = () => {
   return (
-    <>
     <div className="footer">
       <ul className="footer__elements">
-      <li className="element element--home"><FaHome/> Home</li>
-      <li className="element element--about"><FaUserAlt/> About me</li>
-      <li className="element element-work"><FaBriefcase/> Work</li>
-      <li className="element element-contact"><FaPhoneAlt/> Contact</li>
+        <AnchorLink href="#home">
+          {" "}
+          <li className="footer__options">
+            <FaHome />
+            Home
+          </li>
+        </AnchorLink>
+        <AnchorLink href="#about">
+          <li className="footer__options">
+            <FaUserAlt />
+            About me
+          </li>
+        </AnchorLink>
+        <AnchorLink href="#work">
+          <li className="footer__options">
+            <FaBriefcase />
+            Work
+          </li>
+        </AnchorLink>
+        <AnchorLink href="#contact">
+          <li className="footer__options">
+            <FaPhoneAlt />
+            Contact
+          </li>
+        </AnchorLink>
       </ul>
       <ul className="footer__social--media">
         <li className="footer__icon">
-          <IconContext.Provider value={{ className: "icon icon--Instagram"}}>
-            <FaInstagram />
-          </IconContext.Provider>
+          <span className="icon__circle icon__circle--INS">
+            <FaInstagram className="icons icons--INS" color="white" size={30} />
+          </span>
         </li>
         <li className="footer__icon">
-          <IconContext.Provider value={{ className:"icon icon--Twitter" }}>
-            <FaTwitter />
-          </IconContext.Provider>
+          <span className="icon__circle icon__circle--twitter">
+            <FaTwitter
+              className="icons icons--twitter"
+              color="white"
+              size={25}
+            />
+          </span>
         </li>
 
         <li className="footer__icon">
-          <IconContext.Provider value={{ className:"icon icon--Linkedin" }}>
-            <FaLinkedin />
-          </IconContext.Provider>
+          <span className="icon__circle icon__circle--IN">
+            <FaLinkedinIn className="icons icons--IN" color="white" size={25} />
+          </span>
         </li>
         <li className="footer__icon">
-          <IconContext.Provider value={{ className:"icon icon--Facebook" }}>
-            <FaFacebook />
-          </IconContext.Provider>
+          <span className="icon__circle icon__circle--FB">
+            <FaFacebookF className="icons icons--FB" color="white" size={25} />
+          </span>
         </li>
         <li className="footer__icon">
-          <IconContext.Provider value={{ className:"icon icon--youtube" }}>
-            <FaYoutube />
-          </IconContext.Provider>
+          <span className="icon__circle icon__circle--YT ">
+            <FaYoutube className="icons icons--YT" color="white" size={25} />
+          </span>
         </li>
       </ul>
+      
+     
+     
     </div>
-    </>
   );
 };
 

@@ -1,39 +1,59 @@
 .about {
   height: 800px;
+  background-repeat: no-repeat;
   background-image: url("/src/images/IllustrationWoman.svg");
-  background-size:900px ;
+  background-size:1000px ;
   background-position: center;
   background-repeat: no-repeat;
-
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+ 
 }
 
+.about__container{
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+  position: relative;
+  left: 100px;
+  bottom: 80px;
+  padding: 15px;
+}
 
 .about__text{
-  position: relative;
-  left: 80px;
-  bottom: 80px;
-  width: 280px;
+  font-size: 17px;
+  color: white;
+}
+
+.about__title{
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
 }
 
 @media (min-width:280px) and (max-width:599px) {
 
 .about{
-  background-size: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
   padding: 10px;
+  background-color: green;
+ 
 }
 
-
 .about__text{
-  width: 150px;
+  width: 250px;
   position: relative;
-  left: 40px;
+  left: 10px;
   top: 5px;
 }
 
-
+.about__title{
+  position: relative;
+  left:50px;
+}
 
 }

@@ -1,62 +1,106 @@
+.work  {
+  height: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/src/images/Background.svg");
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+}
+.works {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  
+  
+}
 
+.works__swiper{
+  height: 350px;
+}
+
+.image__container {
+  width: 350px;
+  height: 300px;
+  display: flex;
+  margin-left: 15% ;
+  justify-self: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: RGBA(181, 249, 253, 0.32);
+}
+
+img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+.work__textcontainer {
+  background-color: RGBA(0, 0, 0, 0.45);
+  height: 40px;
+  border-radius: 0 0 20px 20px;
+  display: inherit;
+  align-items: center;
+  justify-content: center;
+}
+
+.work__text {
+  color: white;
+  font-weight: bold;
+}
+
+
+.swiper-button {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    cursor: pointer;
+  }
+
+  .image-swiper-button-prev {
+    left: 5px;
+  }
+  .image-swiper-button-next {
+    right: 5px;
+  }
+ /* .works__swiperslide{
+ transform-origin: 0 0;
+ transition: transform .25s, visibility .25s ease-in;
+
+
+.works__swiperslide:hover{
+    transform: scale(1.2)
+  */
+@media (min-width:280px) and (max-width:599px) {
 .work{
-    height:800px;
-    background-image: url("/src/images/Background.svg");
-    background-size:cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-   align-items: center;
-   justify-content: center;
-     
+  width:100%;
+  background-color: green;
 }
 
-img{
-    width: 80%;
-    height: 80%;
-    object-fit: contain;
-    border-radius: 20px;
+ .works{
+    width: 250px;
+    
+   
+ }
+
+ .image__container{
+    width: fit-content;
+ }
+
+.image-swiper-button-next {
+   right: 5px;
+  }
+
+  .image__container {
+    margin: auto;
+  } 
 }
-
-.img_container{
-    height: 120px; 
-    text-align: center;
-}
-
-.work__items{
-    display: flex;
-    height:250px;
-    gap: 5px;
-    justify-content: center;
-    align-items: center;  
-     
-}
-
-.works{
-    width: 210px;
-    height: 200px;  
-    display: flex;
-   flex-direction: column;  
-   justify-content: end;
-   align-content: center;
-   border-radius: 20px;
-   background-color:RGBA(181,249,253,0.32);
-}
-
-
-
-.work__textcontainer{
-   background-color:RGBA(0,0,0,0.45);
-   height:40px;
-   border-radius: 0 0 20px 20px;
-   display:inherit;
-   align-items: center;
-   justify-content: center;
-}
-
-.work__text{
-    color: white;
-    font-weight: bold;
-}
-
