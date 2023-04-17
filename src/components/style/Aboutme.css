@@ -40,14 +40,13 @@
   display: flex;
   justify-content: center;
   padding: 10px;
-  background-color: green;
  
 }
 
 .about__text{
-  width: 250px;
+  width: 200px;
   position: relative;
-  left: 10px;
+  left: 2px;
   top: 5px;
 }
 
