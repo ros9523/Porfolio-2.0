@@ -1,13 +1,10 @@
 import React from "react";
 import "./style/Footer.css";
-import AnchorLink from "react-anchor-link-smooth-scroll";
-
 import {
   FaYoutube,
   FaInstagram,
   FaLinkedinIn,
   FaTwitter,
-  FaFacebook,
   FaFacebookF,
   FaHome,
   FaUserAlt,
@@ -21,31 +18,30 @@ const Footer = () => {
   return (
     <div className="footer">
       <ul className="footer__elements">
-        <AnchorLink href="#home">
-          {" "}
+        <a href="#home">
           <li className="footer__options">
             <FaHome />
             Home
           </li>
-        </AnchorLink>
-        <AnchorLink href="#about">
+        </a>
+        <a href="#about">
           <li className="footer__options">
             <FaUserAlt />
             About me
           </li>
-        </AnchorLink>
-        <AnchorLink href="#work">
+        </a>
+        <a href="#work">
           <li className="footer__options">
             <FaBriefcase />
             Work
           </li>
-        </AnchorLink>
-        <AnchorLink href="#contact">
+        </a>
+        <a href="#contact">
           <li className="footer__options">
             <FaPhoneAlt />
             Contact
           </li>
-        </AnchorLink>
+        </a>
       </ul>
       <ul className="footer__social--media">
         <li className="footer__icon">
@@ -79,9 +75,6 @@ const Footer = () => {
           </span>
         </li>
       </ul>
-      
-     
-     
     </div>
   );
 };

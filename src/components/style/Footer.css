@@ -8,18 +8,16 @@
   background-color: rgba(41, 84, 163, 0.2);
 }
 
-.footer__elements {
-    width: 100%;
-    height: 100px;
+ .footer__elements {
+   width: 100%;
+    height: 100px; 
     display: flex;
     align-items: center;
     gap:90px;
-    font-size: 17px;
     list-style: none;
     justify-content:center;
+    z-index:1 ;
 } 
-
-
 
 .footer__social--media {
   display: flex;
@@ -59,11 +57,11 @@
   margin-top: 10%;
 }
 
-.footer__options {
+  .footer__options {
   display: flex;
   gap: 10px;
   align-items: center;
-} 
+}  
 
 hr{
   position: relative;
@@ -73,6 +71,9 @@ hr{
   color:#EEE9DA;
   opacity: 0.2;
 }
+
+
+
 
 @media (min-width: 280px) and (max-width: 599px) {
  .footer{

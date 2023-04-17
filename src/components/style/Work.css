@@ -37,6 +37,10 @@
   background-color: RGBA(181, 249, 253, 0.32);
 }
 
+.work__title{
+  color: white;
+}
+
 img {
   width: 80%;
   height: 80%;

@@ -11,8 +11,26 @@ const Nav = () => {
 
   return (
     <div className="nav">
-      <nav className="nav__portfolio">
-        <ul className="nav__menu">
+      <ul className="nav__menu">
+        <a className="nav__links" href="#home">
+          <li>Home</li>
+        </a>
+        <a className="nav__links" href="#about">
+          <li>About me</li>
+        </a>
+        <a className="nav__links" href="#work">
+          <li>Work</li>
+        </a>
+        <a className="nav__links" href="#contact">
+          <li>Contact</li>
+        </a>
+      </ul>
+      <div className="nav__menuIcon">
+        <AiOutlineMenu onClick={toggleMenu} size={30} color="white" />
+      </div>
+      {isOpen && (
+        <ul className="nav__menu2">
+          <AiOutlineCloseCircle onClick={toggleMenu} color="white" size={30} />
           <a href="#home">
             <li>Home</li>
           </a>
@@ -26,31 +44,7 @@ const Nav = () => {
             <li>Contact</li>
           </a>
         </ul>
-        <div className="nav__menuIcon">
-          <AiOutlineMenu onClick={toggleMenu} size={30} color="white" />
-        </div>
-        {isOpen && (
-          <ul className="nav__menu2">
-            <AiOutlineCloseCircle
-              onClick={toggleMenu}
-              color="white"
-              size={30}
-            />
-            <a href="#home">
-              <li>Home</li>
-            </a>
-            <a href="#about">
-              <li>About me</li>
-            </a>
-            <a href="#work">
-              <li>Work</li>
-            </a>
-            <a href="#contact">
-              <li>Contact</li>
-            </a>
-          </ul>
-        )}
-      </nav>
+      )}
     </div>
   );
 };

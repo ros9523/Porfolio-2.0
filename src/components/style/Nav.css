@@ -11,9 +11,9 @@
 
 }
 
-.nav__portfolio {
+/* .nav__portfolio {
   display: flex; 
-}
+} */
 
 .nav__menu {
   width: 100%;
@@ -26,6 +26,7 @@
   justify-content:center;
 
 }
+
 
 .nav__img{
   height: 500px;
@@ -48,6 +49,11 @@ a {
   text-decoration: none;
   color: white;
 }
+
+.nav__links:hover{
+ color:tan ;
+}
+
 
 @media only screen and  (min-width: 280px) and (max-width: 599px) {
   
