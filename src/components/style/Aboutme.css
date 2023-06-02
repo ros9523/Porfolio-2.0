@@ -1,22 +1,21 @@
 .about {
+  display: flex;
   height: 800px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-repeat: no-repeat;
   background-image: url("/src/images/IllustrationWoman.svg");
   background-size:1000px ;
   background-position: center;
   background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
- 
 }
 
 .about__container{
+  position: relative;
   flex-direction: column;
   gap: 10px;
   width: 300px;
-  position: relative;
   left: 100px;
   bottom: 80px;
   padding: 15px;
@@ -36,16 +35,15 @@
 @media (min-width:280px) and (max-width:599px) {
 
 .about{
-  width: 100%;
   display: flex;
+  width: 100%;
   justify-content: center;
   padding: 10px;
- 
 }
 
 .about__text{
-  width: 200px;
   position: relative;
+  width: 200px;
   left: 2px;
   top: 5px;
 }
@@ -54,5 +52,4 @@
   position: relative;
   left:50px;
 }
-
 }

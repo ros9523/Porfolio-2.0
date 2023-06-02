@@ -14,7 +14,7 @@ import { A11y, Navigation, Pagination, Scrollbar } from "swiper";
 const Work = () => {
   return (
     <div id= "work" className="work">
-      <h2 className="work__title">My recent work</h2>
+      <h2 className="work__title">Recent work</h2>
       {/* <div className="img__container">
         <img className="img__bg" src={BG}></img>
       </div> */}

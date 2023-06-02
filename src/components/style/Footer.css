@@ -9,31 +9,31 @@
 }
 
  .footer__elements {
+   display: flex;
+   justify-content:center;
+   align-items: center;
    width: 100%;
-    height: 100px; 
-    display: flex;
-    align-items: center;
-    gap:90px;
-    list-style: none;
-    justify-content:center;
-    z-index:1 ;
+   height: 100px; 
+   gap:90px;
+   list-style: none;
+   z-index:1 ;
 } 
 
 .footer__social--media {
   display: flex;
-  gap: 100px;
   justify-content: center;
   align-items: center;
+  gap: 100px;
   list-style: none;
 }
 
 .icon__circle {
+  display: inline-block;
   height: 40px;
   width: 40px;
-  display: inline-block;
+  text-align: center;
   background-color: red;
   border-radius: 25px;
-  text-align: center;
 }
 
 .icon__circle--INS {
@@ -59,8 +59,8 @@
 
   .footer__options {
   display: flex;
-  gap: 10px;
   align-items: center;
+  gap: 10px;
 }  
 
 hr{
@@ -77,9 +77,9 @@ hr{
 
 @media (min-width: 280px) and (max-width: 599px) {
  .footer{
-  gap: 90px;
-  width: 100%;
-  height: 400px;
+   width: 100%;
+   height: 400px;
+   gap: 90px;
  }
  
   .footer__elements {
@@ -87,8 +87,8 @@ hr{
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
-   width: 200px;
-   height: 300px;
+    width: 200px;
+    height: 300px;
 
   }
 

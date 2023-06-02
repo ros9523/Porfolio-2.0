@@ -1,21 +1,21 @@
 .work  {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   height: 1000px;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-image: url("/src/images/Background.svg");
   background-size: cover;
   background-position:center;
   background-repeat: no-repeat;
 }
 .works {
-  width: 500px;
-  height: 500px;
+  position: relative;
   display: flex;
   align-items: center;
-  position: relative;
+  width: 500px;
+  height: 500px;
   
   
 }
@@ -25,14 +25,14 @@
 }
 
 .image__container {
-  width: 350px;
-  height: 300px;
   display: flex;
-  margin-left: 15% ;
   justify-self: center;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 300px;
+  margin-left: 15% ;
   border-radius: 20px;
   background-color: RGBA(181, 249, 253, 0.32);
 }
@@ -44,17 +44,17 @@
 img {
   width: 80%;
   height: 80%;
-  object-fit: contain;
   border-radius: 20px;
+  object-fit: contain;
 }
 
 .work__textcontainer {
-  background-color: RGBA(0, 0, 0, 0.45);
-  height: 40px;
-  border-radius: 0 0 20px 20px;
   display: inherit;
   align-items: center;
   justify-content: center;
+  height: 40px;
+  border-radius: 0 0 20px 20px;
+  background-color: RGBA(0, 0, 0, 0.45);
 }
 
 .work__text {
